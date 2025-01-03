@@ -6,11 +6,12 @@ YAML is a [complex spec](https://ruudvanasseldonk.com/2023/01/11/the-yaml-docume
 
 An `npm install yaml` weighs about 100kb of minified JavaScript.
 
-This static site generator project tries to be as minimalistic as possible, but depends on YAML for
-parsing frontmatter, which is a block of meta data in template files.
+SmolYAML is used in a static site generator that tries tries to be as minimalistic as possible.
+That static site generator depends on YAML for parsing frontmatter, a block of meta data in template files.
+But including the full YAML implementation would quite bloat it.
 
 SmolYAML tries to address that by implementing only a small subset of the specification. To be fair,
-an opinionated one that is (opinionatedly) considered good enough to parse frontmatter meta data.
+it's an opinionated one that is (opinionatedly) considered good enough to parse frontmatter meta data.
 
 In roughly 2KB of minified JavaScript.
 
@@ -21,7 +22,7 @@ npm i @sissijs/smolyaml
 ```
 
 ```js
-import { smolYAML } from 'smolyaml';
+import { smolYAML } from '@sissijs/smolyaml';
 
 const metadata = `
 name: Lea
