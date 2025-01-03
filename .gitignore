@@ -1,0 +1,11 @@
+.DS_Store
+Thumbs.db
+*.log
+tsconfig.tsbuildinfo
+
+node_modules
+codeql.db
+results.csv
+.vscode/launch.json
+dist/
+docs/
